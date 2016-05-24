@@ -2,6 +2,7 @@
 ##########################################################################################
 # Declaração de variáveis e funções
 ##########################################################################################
+
 BASE_URL()
 	{
 	echo "coolrom.com/roms/"$VG_URL"/"$LETRA""
@@ -39,7 +40,8 @@ BANNER()
 
 INICIO()
 {
-ESCOLHA=$(dialog --stdout --menu 'Escolha seu console:' \
+ESCOLHA=$(dialog --backtitle 'ROM Downloader ...' \
+	--stdout --menu 'Escolha seu console:' \
 	       0 0 15 1 'Atari 2600' \
 	2 'Atari 5200' \
 	3 'Atari 7800' \
@@ -67,7 +69,7 @@ ESCOLHA=$(dialog --stdout --menu 'Escolha seu console:' \
 }
 
 BUSCA_LETRA()
-	{
+{
 	ESCOLHA=$(dialog --stdout --menu 'Busca completa ou alfabetica: ' \
 		0 0 0 C "Ordem Alfabetica" \
 		      A "Listagem Completa" )
@@ -78,7 +80,7 @@ case $ESCOLHA in
 	A) LISTA_JOGOS_TODOS
   	   ;;
 esac
-	}
+}
 
 LISTA_JOGOS_TODOS()
 {

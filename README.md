@@ -43,12 +43,14 @@ Baixe roms diretamente do terminal!
 
 **4**- Selecione a forma de visualização: Listagem Completa ou Em ordem alfabética;
 
-**5**- Selecione o número corresdente à URL da rom desejada;
+**5**- Selecione o número corresponde à URL da ROM desejada;
 
 **6**- O download será iniciado!
 
 ##NOTA:
 Para funcionar será necessário possuir o programa **'lynx'** instalado. Basta utilizar o gerenciador de pacotes da sua distribuição para instalá-lo.
+
+A versão em Dialog requer que o **'dialog'** seja instalado.
 
 ##Observações 1:
 Este script está em constante atualização. Funcionalidades podem ser adicionadas ou removidas a qualquer momento sem aviso.
